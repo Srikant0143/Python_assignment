@@ -1,0 +1,154 @@
+## Assignment Part-1
+Q1. Why do we call Python as a general purpose and high-level programming language?
+Ans. Python is called a general purpose because it is used for variety of different program and not a single purpose, and is called High-level programming as it is very easy for humans to understand.
+
+Q2. Why is Python called a dynamically typed language?
+Ans. Python is called a dynamically typed language because even if we dont declare variable there wont be any problem, automatic allocation and garbage collection and it also takes care of memory management.
+
+Q3. List some pros and cons of Python programming language?
+Pros -
+1. It is easy to learn and has large library
+2. Python increases productivity
+3. Has large community
+4. Multi purpose
+5. Free, open source
+6. Dynamic typing
+7. Wide range of applications
+8. Memory management
+
+Cons -
+1. Slow excution speed
+2. Poor database access
+3. weak mobile computation
+4. Runtime error due to dynamic typing
+5. potential memory loss due to garbage collection
+
+Q4. In what all domains can we use Python?
+Ans. Web search system, video sharing service, peer to peer file sharing systems, Hardware testing, Movie animation, Financial market forecasting, scientific programming, Machine learning and AI, Big Data, cryptographic and intelligence analysis, Email servers.
+
+Q5. What are variable and how can we declare them?
+Ans. Variables are basic unit of storage location in computer memory. The variable consists of data type, variable name and the value to be assigned to it.
+Declaration - Name the variable, then assign the required value to it. and data type will automatically be determined.
+
+Q6. How can we take an input from the user in Python?
+Ans. Input can be taken from the built in function input()
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+Ans - String
+
+Q8. What is type casting?
+Ans. Converting variable data type to another data type as per the requirement.
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+Ans - Yes we can take more that one input from the user by using split() function 
+n1, n2, n3 = [int(n) for n in input['Enter values:').split()]
+
+Q10. What are keywords?
+Ans. Keywords are pre defined and reserved words that have special meanings.
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+Ans. Keywords cannot be used as variable names because they are used to define the syntax and structure of the Python language
+
+Q12. What is indentation? What's the use of indentaion in Python?
+Ans. Indentation is a tab space used while doing condition statements, functions and elsewhere. It is used to indicate that the code line belong to specific function or statement.
+
+Q13. How can we throw some output in Python?
+Ans. By Using print() function.
+
+Q14. What are operators in Python?
+Ans - Operators are special characters used to perform operations like arithmatic, logical, assignment, relational etc.
+
+Q15. What is difference between / and // operators?
+Ans. / is division which yields output with fraction or float, and // is division which ignores fractional part and gives only quotient.
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+Ans - print("iNeuron"*4)
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+Ans - 
+a = int(input("Input a number : "))
+if a%2 == 0:
+    print("The number is Even")
+elif a%2 == 1:
+    print("The number is Odd")
+
+Q18. What are boolean operator?
+Ans - Boolean operator is a logical operator which uses statements like AND, OR, NOT, AND NOT which produces output either in TRUE or FALSE
+
+Q19. What will the output of the following?
+```
+1 or 0
+
+0 and 0
+
+True and False and True
+
+1 or 0 or 0
+```
+Ans - 1 , 0, False, 1
+
+Q20. What are conditional statements in Python?
+Ans - Conditional statements are those which are used to handle conditions to make decisions based on the given set of conditions.
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+Ans - 'if' condition makes decision based on whether the condition is true or not.
+'elif' condition adds another layer of condition to the syntax to check if the condition satisfies or not
+'else' condition doesnt skip the indentation if the statement is false rather it add an output which doesnt satisfy the true value.
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("I can vote")
+else:
+    print("I can't vote")
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+Ans - 
+numbers = [12, 75, 150, 180, 145, 525, 50]
+sum = 0
+for num in numbers:
+    if num%2 ==0:
+        sum = sum + num
+print(sum)
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+if (num1 >= num2) and (num1 >= num3):
+   print("largest:", num1)
+elif (num2 >= num1) and (num2 >= num3):
+   print("largest:", num2)
+else:
+   print("largest:", num3)
+
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+ANS: 
+numbers = [12, 75, 150, 180, 145, 525, 50]
+list_1 = []
+for num in numbers:
+    if num%5==0:      
+        if num > 500:
+            break;       
+        if num >150:
+            continue;
+        list_1.append(num)
+                
+print(list_1)
