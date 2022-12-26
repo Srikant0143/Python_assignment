@@ -187,104 +187,84 @@ Ans. The "backslash ()" character as an escape character. In other words, it has
 As the name suggests, the escape character escapes the characters in a string for a brief moment to introduce unique inclusion.
 
 Q33. How can you print the below string?
-
 'iNeuron's Big Data Course'
-Ans33. 'iNeuron's Big Data Course'
+Ans. print("iNeuron's Big Data Course")
 
 Q34. What is a list in Python?
-
-Ans34. Python list are dynamically sized array, declared in languages like C++ and Java. A list is a collection of things, enclosed in [ ] and separated by commas.
+Ans. A list is a collection of things, enclosed in [ ] and separated by commas. Python list are dynamically sized array. 
 
 Q35. How can you create a list in Python?
-
-Ans35. You can create a list by opening and closing the square brackets.
+Ans. By using pair of square brackets.
 
 Q36. How can we access the elements in a list?
-
-Ans36. We can access the elements in a list by indexing.
+Ans. Indexing is the method We can access the elements in a list. 
 
 Q37. Write a code to access the word "iNeuron" from the given list.
-
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
-Ans37.
-
+Ans.
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 lst[4][2]
+
 Q38. Take a list as an input from the user and find the length of the list.
+Ans.
+list_1 = input("Enter number of elements seprated by comma: ").split(",")
+print(len(list_1))
 
-Ans38.
-
-n = input("Enter number of elements seprated by space: ").split(" ")
-print(len(n))
 Q39. Add the word "Big" in the 3rd index of the given list.
+Ans. 
+list_2 = ["Welcome", "to", "Data", "course"]
+list_2.insert(2,"Big")
 
-lst = ["Welcome", "to", "Data", "course"]
-Ans39.
-
-lst = ["Welcome", "to", "Data", "course"]
-lst.insert(2, "Big")
 Q40. What is a tuple? How is it different from list?
-
-Ans40. Tuple is a collection of Python objects much like a list. The sequence of values stored in a tuple can be of any type, and they are indexed by integers. Tuples are immutable where as list are mutable. We can also faster through the tuples than the list.
+Ans. Tuple is a collection of Python objects similar like a list. Tuples are immutable. The sequence of values stored in a tuple can be of any type, and they are indexed by integers.
 
 Q41. How can you create a tuple in Python?
-
-Ans41. We can create tuple using round brackets ().
+Ans. We can create tuple by using pair of paranthesis ()
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+Ans. No, I can't add or modify a tuples as they are immutable. We can do it by type casting tuple to list and then append and then back to tuple.
+tuple_1 = ()
+tuple_1 = list(tuple_1)
+tuple_1.append("Srikant")
+tuple_1 = tuple(tuple_1)
+tuple_1
 
-Ans42. No, I can't as tuples are immutable. The work around is it typecast tuple to list and then append.
-
-tup = ()
-tup = list(tup)
-tup.append("Vishal")
-tup = tuple(tup)
-tup
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+Ans.Yes, we can append two tuples
+tup_1 = ("Srikant ")
+tup_2 = ("Kamatagi")
+tup_1+tup_2
 
-Ans43.Yes, we can.
-
-tup1 = ("Vishal ")
-tup2 = ("Singh")
-tup1+tup2
 Q44. Take a tuple as an input and print the count of elements in it.
+Ans.
+a = input("Input the values separeted by comma: ").split(",")
+a = tuple(a)
+print(len(a))
 
-Ans44.
-
-x = input("Enter the values separeted by space: ").split(" ")
-x = tuple(x)
-print(len(x))
 Q45. What are sets in Python?
-
-Ans45. A set is an unordered collection of data types that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements.
+Ans. A set is an unordered collection of data type. Set is iterable, mutable and contains no duplicate elements. The order of elements in a set is undefined though it may consist of various elements.
 
 Q46. How can you create a set?
-
-Ans46. We can create set using curly brackets {}. Keep in mind empty {} will result in dictionary hence there must be some value in the brackets.
+Ans. We can create set using pair flower brackets {}.
 
 Q47. Create a set and add "iNeuron" in your set.
+Ans.
+set_1 = {"iNeuron"}
+set_1
 
-Ans47.
-
-set1 = {"iNeuron"}
-set1
 Q48. Try to add multiple values using add() function.
+Ans.
+b.add("Srikant")
+b.add("Kamatagi")
+print(b)
 
-Ans48.
-
-set1.add("Big")
-set1.add("Data")
-set1
 Q49. How is update() different from add()?
-
-Ans49. We can add more than one element in a single go using update(), but using add() it's not possible.
+Ans. We can add multiple elements at a time using update() function, but with add() function we can add only 1 element at a time.
 
 Q50. What is clear() in sets?
-
-Ans50. To remove all the elements from the set, clear() function is used.
+Ans. clear() function is used to remove all the items from the set.
 
 Q51. What is frozen set?
-
 Ans51. Frozen sets in Python are immutable objects that only support methods and operators that produce a result without affecting the frozen set or sets to which they are applied. While elements of a set can be modified at any time, elements of the frozen set remain the same after creation.
 
 Q52. How is frozen set different from set?
