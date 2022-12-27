@@ -265,142 +265,115 @@ Q50. What is clear() in sets?
 Ans. clear() function is used to remove all the items from the set.
 
 Q51. What is frozen set?
-Ans51. Frozen sets in Python are immutable objects that only support methods and operators that produce a result without affecting the frozen set or sets to which they are applied. While elements of a set can be modified at any time, elements of the frozen set remain the same after creation.
+Ans. Frozen sets in Python are immutable objects that only support methods and operators that produce a result without affecting the frozen set or sets to which they are applied. While elements of a set can be modified at any time, elements of the frozen set remain the same after creation.
 
 Q52. How is frozen set different from set?
+Ans.Frozen sets are immutable where as sets are mutable. Sets can't be used as keys in dictionary where as frozen sets can be used.
 
-Ans52.
-
-Frozen sets are immutable where as sets are mutable.
-Sets can't be used as keys in dictionary where as frozen sets can be used.
 Q53. What is union() in sets? Explain via code.
-
-Ans53. Python set Union() Method returns a new set which contains all the items from the original set.
-
+Ans. Python set Union() Method returns a new set which contains all the items from the original set.
 set1 = {2, 4, 5, 6}
 set2 = {4, 6, 7, 8}
 set3 = {7, 8, 9, 10}
-
 print("set1 U set2 : ", set1 | set2)
-
 print("set1 U set2 U set3 :", set1 |set2 | set3)
+
 Q54. What is intersection() in sets? Explain via code.
-
-Ans54. Python set intersection() method returns a new set with an element that is common to all set
-
+Ans. Python set intersection() method returns a new set with an element that is common to all set
 set1 = {2, 4, 5, 6}
 set2 = {4, 6, 7, 8}
 set3 = {4, 6, 8}
-
 print("set1 intersection set2 : ", set1.intersection(set2))
-
 print("set1 intersection set2 intersection set3 :", set1.intersection(set2, set3))
-Q55. What is dictionary ibn Python?
 
-Ans55. Dictionary in Python is a collection of keys values, used to store data values like a map, which, unlike other data types which hold only a single value as an element.
+Q55. What is dictionary in Python?
+Ans. Dictionary in Python is a collection of keys values, used to store data values like a map, which, unlike other data types which hold only a single value as an element.
 
 Q56. How is dictionary different from all other data structures.
-
-Ans56. Dictionary is having key and value pair where as all other data structures have only values in them.
+Ans. Dictionary is having key and value pair where as all other data structures have only values in them.
 
 Q57. How can we delare a dictionary in Python?
-
-Ans57. We can create dictionary using curly brackets {}.
+Ans. We can create dictionary using pair of curly brackets {}.
 
 Q58. What will the output of the following?
-
 var = {}
 print(type(var))
-Ans58. dict
+Ans. <class 'dict'>
 
 Q59. How can we add an element in a dictionary?
-
-Ans59.
-
+Ans.
 Dict = {}
 Dict[0] = "Hello"
-Dict[1] = "Course: ["Data Science", "Big Data"]"
+Dict[1] = "Name:[Srikant,Kamatagi]"
+print(Dict)
+
 Q60. Create a dictionary and access all the values in that dictionary.
-
-Ans60.
-
-Dict = {"Name": "Vishal", "Experience": 3, "Organisation":"iNeuron"}
-for i, j in Dict.items():
-  print(f"Key is {i} and value is {j}")
+Ans.
+Dict = {'Name' : 'Srikant Kamatagi', 'Age':29, 'weight':62}
+print(Dict.values())
+  
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
-
-Ans61.
-
-Dict = {"Name": {"f_name":"Vishal", "l_name":"Singh"}, "Experience": 3, "Organisation":"iNeuron"}
+Ans. 
+Dict = {'Name' : 'Srikant Kamatagi', 'Courses':{'Course_1':'Data Science', 'Course_2':'Big Data'}, 'Age':29, 'weight':62}
+print(Dict['Courses'])
+and
+Dict = {"Name": {"f_name":"Srikant", "l_name":"Kamatagi"}, "Experience": 5, "Organisation":"ABC"}
 for i, j in Dict["Name"].items():
   print(f"Key is {i} and value is {j}")
+  
 Q62. What is the use of get() function?
-
-Ans62. get() is also to access the elements in dictionary.
-
-Dict = {"Name": "Vishal", "Experience": 3, "Organisation":"iNeuron"}
+Ans62. get() function is used to access the elements in dictionary.
+Dict = {"Name": "Srikant Kamatagi", 'Age':29, 'weight':65}
 print(Dict.get("Name"))
+
 Q63. What is the use of items() function?
-
-Ans63. items() method is used to return the list with all dictionary keys with values.
-
-Dict = {"Name": "Vishal", "Experience": 3, "Organisation":"iNeuron"}
+Ans. items() method is used to return the list with all dictionary keys with values.
+Dict = {"Name": "Srikant Kamatagi", 'Age':29, 'weight':65}
 print(Dict.items())
+
 Q64. What is the use of pop() function?
-
-Ans64.
-
-Dict = {"Name": "Vishal", "Experience": 3, "Organisation":"iNeuron"}
+Ans. Pop is used to remove a key value from the dictionary
+Dict = {"Name": "Srikant Kamatagi", 'Age':29, 'weight':65}
 print(Dict.pop("Name"))
-Q65. What is the use of popitems() function?
 
-Ans65. popitem() method removes the last inserted key-value pair from the dictionary and returns it as a tuple.
-
-Dict = {"Name": "Vishal", "Experience": 3, "Organisation":"iNeuron"}
+Q65. What is the use of popitem() function?
+Ans. popitem() method removes the last inserted key-value pair from the dictionary and returns it as a tuple.
+Dict = {"Name": "Srikant Kamatagi", 'Age':29, 'weight':65}
 print(Dict.popitem())
+
 Q66. What is the use of keys() function?
-
-Ans66. keys() method returns a view object that displays a list of all the keys in the dictionary.
-
-Dict = {"Name": "Vishal", "Experience": 3, "Organisation":"iNeuron"}
+Ans. keys() method returns a view object that displays a list of all the keys in the dictionary.
+Dict = {"Name": "Srikant Kamatagi", 'Age':29, 'weight':65}
 print(Dict.keys())
+
 Q67. What is the use of values() function?
-
-Ans67. values() is an inbuilt method in Python programming language that returns a view object. The view object contains the values of the dictionary, as a list.
-
+Ans. values() is an inbuilt method in Python programming language that returns a view object. The view object contains the values of the dictionary, as a list.
 Dict = {"Name": "Vishal", "Experience": 3, "Organisation":"iNeuron"}
 print(Dict.values())
-Q68. What are loops in Python?
 
-Ans68. Loops are used the iterate over a block of statement multiple times.
+Q68. What are loops in Python?
+Ans. Loops are used the iterate over a block of statement multiple times in python program.
 
 Q69. How many type of loop are there in Python?
-
-Ans69. There is for and while loop in Python
+Ans. There are two types of loops one is for loop and other is while loop in Python
 
 Q70. What is the difference between for and while loops?
-
-Ans70. When we know the exact number of iterations, we can use for loop. When we want the to run till a certain condition is true we can use while loop.
+Ans. When we want to have the exact number of iterations, we can use for loop. When we want the to run till a certain condition is true we can use while loop.
 
 Q71. What is the use of continue statement?
-
-Ans71. Continue Statement skips the execution of the program block from after the continue statement and forces the control to start the next iteration.
+Ans. Continue Statement skips the execution of the program block for the immediete next iteration forces the control to start the next iteration.
 
 Q72. What is the use of break statement?
-
-Ans72. break statement in Python is used to bring the control out of the loop when some external condition is triggered. break statement is put inside the loop body
+Ans. Break statement in Python is used to bring the control out of the loop when some external condition is triggered. break statement is put inside the loop body
 
 Q73. What is the use of pass statement?
-
-Ans73. The pass statement is a null statement. But the difference between pass and comment is that comment is ignored by the interpreter whereas pass is not ignored.
+Ans. The pass statement is a null statement inserted in the code block.
 
 Q74. What is the use of range() function?
-
-Ans74. range() function returns a sequence of numbers, in a given range. The most common use of it is to iterate sequence on a sequence of numbers
+Ans. range() function returns a sequence of numbers, in a given range.
 
 Q75. How can you loop over a dictionary?
-
-Ans75.
+Ans. We can loop through a dictionary by using a for loop. When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.
 
 statesAndCapitals = {
 	'Gujarat': 'Gandhinagar',
@@ -408,14 +381,11 @@ statesAndCapitals = {
 	'Rajasthan': 'Jaipur',
 	'Bihar': 'Patna'
 }
-
 for state in statesAndCapitals:
 	print(state)
-Coding problems
+
 Q76. Write a Python program to find the factorial of a given number.
-
-Ans76.
-
+Ans.
 def factorial(n):
   if n < 0:
     return 0
@@ -430,6 +400,7 @@ def factorial(n):
 
 n=6
 print(f"Factorial of {n} is {factorial(n)}")
+
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (PRT)/100
 
 Ans77.
@@ -440,6 +411,7 @@ def SI(p,r,t):
   return si
 
 SI(8, 8, 6)
+
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
 
 Ans78.
