@@ -6,3 +6,45 @@ print(dist_in_miles)
 
 Q2.Write a Python program to convert Celsius to Fahrenheit
 Ans: -
+temp = float(input("Input temperature in celcuis:"))
+temp_in_Fahrenheit = (temp*(9/5))+32
+print(temp_in_Fahrenheit)
+
+Q3. Write a Python program to display calendar?
+Ans:-
+import calendar
+year = 2023
+month = 2
+print(calendar.month(year,month))
+-------------------
+year = 2023
+print(calendar.month(year))
+
+Q4. Write a Python program to solve quadratic equation?
+Ans: -
+import cmath
+
+print("a*x**2+b*x+c")
+a = int(input("Enter the coeff a: "))
+b = int(input("Enter the coeff b: "))
+c = int(input("Enter the coeff c: "))
+
+d = (b**2)-(4*a*c)
+root1 = ((-b)+(cmath.sqrt(d)))/2*a
+root2 = ((-b)-(cmath.sqrt(d)))/2*a
+
+print("The solution for quadratic equation are {} and {}".format(root1,root2))
+
+Q5. Write a Python program to swap two variables without temp variable?
+Ans: - 
+var1 = 5
+var2 = 10
+
+var1 = var1 + var2
+var2 = var1 - var2
+var1 = var1 - var2
+
+print("var1 =", var1)
+print("var2 =", var2)
+
+-----------------END----------------------
