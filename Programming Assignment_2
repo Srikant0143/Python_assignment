@@ -1,0 +1,8 @@
+Q1. Write a Python program to convert kilometers to miles?
+Ans: -
+dist = float(input("Input distance in Kilometers:"))
+dist_in_miles = dist*1.6
+print(dist_in_miles)
+
+Q2.Write a Python program to convert Celsius to Fahrenheit
+Ans: -
