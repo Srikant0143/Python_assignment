@@ -1,57 +1,40 @@
 Q1. Write a Python Program to Find the Factorial of a Number?
 Sol: - 
-
-
-
-
-
-
-
-
-
-
-
-
+num = int(input("Enter a number: "))
+fact = 1
+if num<0:
+    print("Factorial of", num, "does't exist")
+elif num == 0:
+    print("Factorial of 0 is 1")
+else:
+    for i in range(num,1,-1):
+        fact = fact * i
+    print("\nFactorial of the number {} is {}".format(num,fact))
 
 
 Q2. Write a Python Program to Display the multiplication Table?
 Sol:-
+num = int(input("Enter a number: "))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if num < 1:
+    print("Enter a number greater than 0")
+else:
+    for i in range(1,11):
+        print(num,"x", i, "=", num*i)
 
 
 Q3. Write a Python Program to Print the Fibonacci sequence?
 Sol:-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fibo_len = int(input("Enter fibonacci sequence length: "))
+if fibo_len <1:
+    print("Enter a number greater than 0")
+else:
+    
+    a,b = 0,1
+    while b <= fibo_len:
+        print(b)
+        a,b = b, a+b
+   
 
 Q4. Write a Python Program to Check Armstrong Number?
 Sol:-
