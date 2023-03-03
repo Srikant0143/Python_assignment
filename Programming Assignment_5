@@ -1,17 +1,22 @@
 Q1. Write a Python Program to Find LCM?
 Sol : -
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
 
+if num1 == 0 or num2 == 0:
+    LCM = 0
+elif num1 < 0 or num2 < 0:
+    print("Please enter the numbers greated than or equal to 0")
+else:
+    n = max(num1, num2)
+    while True:
+        if n % num1 == 0 and n % num2 == 0:
+            LCM = n
+            break
+        else:
+            n += 1
 
-
-
-
-
-
-
-
-
-
-
+    print(LCM, "is the LCM of", num1, "&", num2)
 
 
 Q2. Write a Python Program to Find HCF?
