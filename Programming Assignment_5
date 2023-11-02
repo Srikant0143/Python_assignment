@@ -6,7 +6,7 @@ num2 = int(input("Enter a number: "))
 if num1 == 0 or num2 == 0:
     LCM = 0
 elif num1 < 0 or num2 < 0:
-    print("Please enter the numbers greated than or equal to 0")
+    print("Please enter the numbers greater than or equal to 0")
 else:
     n = max(num1, num2)
     while True:
