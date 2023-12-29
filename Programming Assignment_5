@@ -20,63 +20,69 @@ else:
 
 
 Q2. Write a Python Program to Find HCF?
-Sol : -
-
-
-
-
-
-
-
-
-
-
-
+Sol : 
+def hcf(a,b):
+    if a<1 or b<1:
+        return 'Enter numbers greater than 0'
+    n = min(a,b)
+    while True:
+        if a%n == 0 and b%n == 0:
+            break
+        else:
+            n -=1
+    return n
 
 
 Q3. Write a Python Program to Convert Decimal to Binary, Octal and Hexadecimal?
 Sol : -
-
-
-
-
-
-
-
-
-
-
+def dec_conversion(num):
+    print(f"Binary equivalent of {num} is:", bin(num))
+    print(f"Octal equivalent of {num} is:", oct(num))
+    print(f"Hexadecimal equivalent of {num} is:", hex(num))
 
 
 Q4. Write a Python Program To Find ASCII value of a character?
 Sol : -
-
-
-
-
-
-
-
-
-
-
-
-
-
+try:
+    char = input("Enter a character: ")
+    ASCII = ord(char)
+    print("ASCII value of {} is {}".format(char, ASCII))
+except Exception as e:
+    print(e)
 
 
 Q5. Write a Python Program to Make a Simple Calculator with 4 basic mathematical operations?
 Sol : -
-
-
-
-
-
-
-
-
-
-
-
-
-
+try:
+    
+    while True:
+        num1 = int(input("Enter first number: "))
+        num2 = int(input("Enter second number: "))
+        
+        print("\nFor addition:       +")
+        print("For subtraction:    -")
+        print("For multiplicaton:  *")
+        print("For division:       /")
+        print("For Exit:            X")
+        
+        ch = input("\nEnter the choice for mathematical operations: ")
+        
+        
+        if ch == '+':
+            output = num1 + num2
+        elif ch == '-':
+            output = num1 - num2
+        elif ch == '*':
+            output = num1 * num2
+        elif ch == '/':
+            output = num1 / num2
+        
+        if ch == 'X' or ch == 'x':
+            break
+            
+        print("\nResult: ", output)
+        
+        
+            
+except Exception as e:
+    print(e)
